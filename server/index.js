@@ -18,7 +18,7 @@ app.use(cors());
 
 connectDB();
 
-app.all(
+app.use(
     '/graphql',
     graphqlHTTP({
         schema,
