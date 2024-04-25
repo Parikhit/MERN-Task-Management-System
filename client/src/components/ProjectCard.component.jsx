@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 
+import { Link } from 'react-router-dom';
+
 const ProjectCard = ({ project }) => {
     const { id, name, status } = project;
     return (
@@ -9,12 +11,12 @@ const ProjectCard = ({ project }) => {
                     <div className='d-flex justify-content-between align-items-center'>
                         <h5 className='card-title'>{name}</h5>
 
-                        <a
+                        <Link
                             className='btn btn-light'
-                            href={`/projects/${id}`}
+                            to={`/projects/${id}`}
                         >
                             View
-                        </a>
+                        </Link>
                     </div>
                     <p className='small'>
                         Status: <strong>{status}</strong>
