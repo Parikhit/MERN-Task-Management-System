@@ -7,7 +7,7 @@ const Header = () => {
             <div className='container'>
                 <Link
                     className='navbar-brand'
-                    href='/'
+                    to='/'
                 >
                     <div className='d-flex gap-3 align-items-center'>
                         <img
